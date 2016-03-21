@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body,td,th {
+	color: #000;
+}
+body {
+	background-color: #FFF;
+}
+</style>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000">
+<p align="center"><img src="img/title.png" alt="" width="130" height="210" /></p>
+<p align="center">NESFlix Conversion Tool by Andrew Reitano / Batsly Adams</p>
+<p align="center"><a href="www.batslyadams.com">www.batslyadams.com</a></p>
+<p align="center">&nbsp;</p>
+<p align="center">NESFlix by Don Miller / NO CARRIER</p>
+<p align="center"><a href="www.no-carrier.com">www.no-carrier.com</a></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<h2 align="left"><strong>DESCRIPTION</strong></h2>
+<p align="left">The NESFlix Conversion Tool is a cross platform program to create an NES compatible array of CHR pages from an animated GIF for use with NESFlix. Simply select a 128x128 4-color GIF and the tool will handle the conversion to  2BPP and pack the frames into a file that NESFlix can read natively.</p>
+<p align="center">&nbsp;</p>
+<h2 align="left"><strong>OPTIONS</strong></h2>
+<p align="center"><strong>MMC3 / MMC5</strong></p>
+<p align="center">This option will affect the output format based on your intended mapper, MMC3 supports up to 64 frames / MMC5 supports up to 256. Be sure to use MMC3 if you intend on using the ROM on a Powerpak. The tool will automatically pad out any unused frames so that the CHR will align correctly with the ROM.</p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong>AUTOCONVERT</strong></p>
+<p align="center"><strong><em>EXPERIMENTAL</em></strong> - Works on some GIFs, will perform 4 color conversion and 128x128 resizing. Use the Photoshop tutorial for best results.</p>
+<p align="center">&nbsp;</p>
+<p align="center"><strong>DELETE FIRST TILE OPTION</strong></p>
+<p align="center">Since the we using an entire CHR page to display the video there are no available blank tiles to fill the rest of the screen. This option allows you to delete the top left corner tile to provide a solid fill for the unused space.</p>
+<p align="center"><img src="img/deletefirsttile.png" alt="" width="544" height="224" /></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<h2 align="left"><strong>BRIEF PHOTOSHOP TUTORIAL</strong></h2>
+<p align="center">Open up an MP4/AVI in Photoshop, use the trim settings  until you create a loop that you're happy with. Don't forget to watch your frame count, 64 for MMC3 / 256 for MMC5.</p>
+<p align="center"><img src="img/video_out.png" alt="" width="777" height="751" /></p>
+<p align="center">&nbsp;</p>
+<p align="center">Select &quot;Save for Web &amp; Devices&quot;, play with the dither settings  to see what looks best. Be sure to set the output to GIF. Reduce to 4 colors. Uncheck &quot;Transparency&quot; otherwise the gif will result in only 3 useful colors. The size also needs to be changed to 128x128, these are the dimensons of a full CHR page. Don't worry about what the preview looks like in terms of color, as long as there are only 4 the tool will be able to properly create the CHR, the NES palette ultimately decides the how they will display.</p>
+<p align="center"><img src="img/export.png" width="1138" height="980" /></p>
+<p align="center">&nbsp;</p>
+<p align="center">Open up the NESFlix conversion tool, click the CONVERT button and select your file. This should create a &lt;filename.gif&gt;.chr in the current directory.</p>
+<p align="center"><img src="img/convert.png" alt="" width="692" height="423" /> </p>
+<p align="center">&nbsp;</p>
+<p align="center">Edit the appropriate compilation file to include the new CHR movie.</p>
+<p align="center"><img src="img/compile.png" width="733" height="62" /></p>
+<p align="center">&nbsp;</p>
+<p align="center">Don't forget to edit the number of frames in the source to make sure the movie loops properly!</p>
+<p align="center"><img src="img/framecount.png" width="777" height="441" /></p>
+<p align="left">&nbsp;</p>
+<p align="center">Compile and enjoy.</p>
+<p align="center"><a href="www.batslyadams.com">www.batslyadams.com</a></p>
+</body>
+</html>
